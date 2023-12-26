@@ -1,0 +1,22 @@
+            - nombre: cargar un artefacto de construcción
+  usos: acciones/upload-artifact@v4.0.0
+  con:
+    # Nombre del artefacto
+    nombre: # opcional, el valor predeterminado es artefacto
+    # Un archivo, directorio o patrón comodín que describe qué cargar
+    camino:
+    # El comportamiento deseado si no se encuentran archivos utilizando la ruta proporcionada.
+Opciones Disponibles:
+  advertir: genera una advertencia pero no falla la acción
+  error: falla la acción con un mensaje de error
+  ignorar: no genera ninguna advertencia ni error, la acción no falla
+
+    if-no-files-found: # opcional, el valor predeterminado es advertir
+    # Duración tras la cual el artefacto caducará en días. 0 significa utilizar la retención predeterminada.
+Mínimo 1 día. Máximo 90 días a menos que se cambie desde la página de configuración del repositorio.
+
+    días de retención: # opcional
+    # El nivel de compresión de Zlib que se aplicará al archivo de artefactos. El valor puede variar de 0 a 9: - 0: Sin compresión - 1: Mejor velocidad - 6: Compresión predeterminada (igual que GNU Gzip) - 9: Mejor compresión Los niveles más altos darán como resultado una mejor compresión, pero tardarán más en completarse. Para archivos grandes que no se comprimen fácilmente, se recomienda un valor de 0 para cargas significativamente más rápidas.
+
+    nivel de compresión: # opcional, el valor predeterminado es 6
+          
